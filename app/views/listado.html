@@ -1,0 +1,19 @@
+<p>Listado de Usuarios</p>
+<table class="table">
+	<thead>
+		<tr>
+			<td>Usuario</td>
+			<td>Nombre</td>
+			<td>Apellido</td>
+			<td>Creado</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr  ng-repeat="user in usuarios">
+			<td>{{user.user}}</td>
+			<td>{{user.firstname}}</td>
+			<td>{{user.lastname}}</td>
+			<td>{{user.created}}</td>
+		</tr>
+	</tbody>
+</table>
