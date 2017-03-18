@@ -8,24 +8,21 @@
  * Controller of the miappApp
  */
 angular.module('miappApp')
-  .controller('MainCtrl', function ($scope,UserService,$cookies) {
-
+  .controller('MainCtrl', function ($scope, UserService, $cookies) {
+    
   	$scope.onSubmit = function(){
-  		console.log(1);
-  		if ($scope.loginForm.$valid){
-  			console.log(2);
-  			//envia data
-  			console.log($scope.usuario);
+  		if($scope.loginForm.$valid){
+  			//enviar data
   			UserService.login($scope.usuario)
-	  			.then(function(response){
-	  				console.log(3);
-	  				console.log(response);
-	  				$cookies.put('token',response.data.token);
+  				.then(function(response){
+  					console.log(response);
+  					$cookies.put('token', response.data.token);
 
-	  				var token = $cookies.get('token');
-	  				console.log(token);
-	  			});
+  					var token = $cookies.get('token');
+  					console.log(token);
+
+  				});
   		}
   	}
- 
+
   });

@@ -21,18 +21,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <header>  
-      <h1>Mi Primera App</h1>
+    <header>
+      <h1>Mi primera app con yeoman</h1>
+      
       <nav>
         <ul>
           <li><a href="#/">Login</a></li>
-          <li><a href="#">Registro</a></li>
+          <li><a href="#/registro">Registro</a></li>
           <li><a href="#/listado">Listado</a></li>
+
         </ul>
       </nav>
+      
     </header>
+
     <div class="container">
-      <div ng-view=""></div>
+    <div ng-view=""></div>
     </div>
 
     <div class="footer">
@@ -42,8 +46,7 @@
     </div>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <!-- epa: 201703
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
@@ -52,8 +55,8 @@
 
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
-    </script>
-    -->
+    </script>-->
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -72,7 +75,8 @@
         <script src="scripts/services/config.js"></script>
         <script src="scripts/services/userservice.js"></script>
         <script src="scripts/controllers/listado.js"></script>
-        <script src="scripts/controllers/agregar.js"></script>
+        <script src="scripts/controllers/registro.js"></script>
+        <script src="scripts/services/organizationservice.js"></script>
         <!-- endbuild -->
 </body>
 </html>

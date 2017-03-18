@@ -8,9 +8,12 @@
  * Controller of the miappApp
  */
 angular.module('miappApp')
-  .controller('ListadoCtrl', function ($scope, UserService) {
- 	UserService.listado()
- 	.then(function (response) {
- 		$scope.usuarios = response.data.data;
- 	});
+  .controller('ListadoCtrl', 
+  	function ($scope, UserService) {
+    
+  		UserService.listado()
+  			.then(function(response){
+  				$scope.usuarios = response.data.data;
+  			});
+
   });

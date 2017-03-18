@@ -9,7 +9,9 @@
  */
 angular.module('miappApp')
   .constant('Config', {
-  	BASE: 'http://192.168.1.35:3036/',
+  	/*BASE: 'http://192.168.1.35:3036/',*/
+  	BASE: 'http://localhost:3333/',
   	USERS: 'users/',
-  	LOGIN:'users/login'
+  	LOGIN: 'users/login',
+  	ORGANIZATIONS: 'organizations/'
   });

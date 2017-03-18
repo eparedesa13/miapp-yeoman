@@ -14,7 +14,7 @@ angular
     'ngCookies',
     'ngRoute'
   ])
-  .config(function ($routeProvider,$locationProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -31,10 +31,10 @@ angular
         controller: 'ListadoCtrl',
         controllerAs: 'listado'
       })
-      .when('/agregar', {
-        templateUrl: 'views/agregar.html',
-        controller: 'AgregarCtrl',
-        controllerAs: 'agregar'
+      .when('/registro', {
+        templateUrl: 'views/registro.html',
+        controller: 'RegistroCtrl',
+        controllerAs: 'registro'
       })
       .otherwise({
         redirectTo: '/'
